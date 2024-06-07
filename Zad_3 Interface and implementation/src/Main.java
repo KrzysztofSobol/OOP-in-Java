@@ -1,6 +1,7 @@
 import kartoteka.IKartoteka;
 import kartoteka.Osoba;
-import kartoteka.impl.Kartoteka;
+import kartoteka.mockup.Kartoteka;
+
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicMarkableReference;
 
@@ -21,10 +22,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        // Implementacja
-        Kartoteka kartoteka = new Kartoteka();
-        // Mockup
-        //kartoteka.mockup.Kartoteka kartoteka = new kartoteka.mockup.Kartoteka();
+        IKartoteka kartoteka; // Interfejs
+        kartoteka = new kartoteka.impl.Kartoteka(); // Implementacja
+        //kartoteka = new kartoteka.mockup.Kartoteka(); // Mockup
 
         while(true){
             System.out.println("1. Dodaj osobe");

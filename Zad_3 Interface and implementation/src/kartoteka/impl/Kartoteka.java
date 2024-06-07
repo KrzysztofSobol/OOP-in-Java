@@ -8,9 +8,7 @@ import java.util.List;
 public class Kartoteka implements IKartoteka {
     private final List<Osoba> osoby = new ArrayList<>();
 
-    public void dodaj(Osoba osoba){
-        osoby.add(osoba);
-    }
+    public void dodaj(Osoba osoba){ osoby.add(osoba);}
     public void usun(Osoba osoba){
         osoby.remove(osoba);
     }
