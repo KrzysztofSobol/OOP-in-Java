@@ -37,9 +37,9 @@ public class Main {
         Bank bank = new Bank();
 
         Osoba osoba = new Osoba("Krzysztof", "Sobolewski", "1010101010");
-        WaznaOsoba Waznaosoba = new WaznaOsoba("Pani", "Duda", "1234567890");
+        WaznaOsoba Waznaosoba = new Osoba("Pani", "Duda", "1234567890");
         Firma firma = new Firma("Pierkarnia", "962163972");
-        DuzaFirma Duzafirma = new DuzaFirma("Windows", "162343992");
+        DuzaFirma Duzafirma = new Firma("Windows", "162343992");
 
         /// Konta dla osoby
         Konto konto1 = new Konto("0001");
